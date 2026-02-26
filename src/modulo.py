@@ -75,8 +75,9 @@ def obtener_listado_palabras(lista_palabras):
 
 def palabras_comunes(diccionario_palabras):
     print("Cuantas son las palabras comunes que quieres conocer?")
-    numero = int(input())
-    palabras_comunes = palabras_mas_comunes(diccionario_palabras, numero)
+    numero = input()
+    num = int(numero)
+    palabras_comunes = palabras_mas_comunes(diccionario_palabras, num)
     print(f"Estas son las {numero} palabras mas comunes: {palabras_comunes}")
 
 
@@ -102,4 +103,5 @@ def main():
     repetida_palabra(diccionario_palabras)
 
 
-main()
+if __name__ == "__main__":
+    main()
